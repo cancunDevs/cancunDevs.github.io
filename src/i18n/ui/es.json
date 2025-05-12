@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "expertise": "Experiencia",
+    "contact": "Contacto",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "title": "Transformando Ideas en Realidad Digital Prueba",
+    "description": "Somos una consultoría de desarrollo de software de servicio completo especializada en crear soluciones innovadoras en todas las plataformas. Desde sitios web estáticos hasta aplicaciones complejas, damos vida a tu visión con tecnología de vanguardia y experiencia artesanal.",
+    "cta": "Comenzar"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "items": {
+      "customDev": {
+        "title": "Desarrollo de Software Personalizado",
+        "description": "Desarrollo integral de aplicaciones web, móviles y de escritorio adaptadas a tus necesidades específicas."
+      },
+      "cloud": {
+        "title": "Soluciones en la Nube",
+        "description": "Infraestructura en la nube escalable y desarrollo de APIs para impulsar tu transformación digital."
+      },
+      "staff": {
+        "title": "Aumento de Personal",
+        "description": "Mejora tu equipo con nuestros desarrolladores y expertos técnicos calificados."
+      },
+      "training": {
+        "title": "Capacitación Técnica",
+        "description": "Programas de capacitación integrales para mejorar las habilidades de tu equipo en tecnologías modernas."
+      },
+      "interviews": {
+        "title": "Entrevistas Técnicas",
+        "description": "Servicios expertos de evaluación técnica y entrevistas para construir tu equipo ideal."
+      },
+      "consulting": {
+        "title": "Consultoría",
+        "description": "Consultoría estratégica en tecnología para ayudarte a tomar decisiones informadas."
+      }
+    }
+  },
+  "expertise": {
+    "title": "Nuestra Experiencia",
+    "items": {
+      "web": {
+        "title": "Desarrollo Web",
+        "description": "Sitios estáticos hasta aplicaciones web complejas"
+      },
+      "mobile": {
+        "title": "Desarrollo Móvil",
+        "description": "Aplicaciones nativas para iOS y Android"
+      },
+      "desktop": {
+        "title": "Aplicaciones de Escritorio",
+        "description": "Soluciones de escritorio multiplataforma"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "description": "Infraestructura escalable y automatización"
+      }
+    }
+  },
+  "contact": {
+    "title": "¿Listo para Comenzar tu Proyecto?",
+    "description": "Hablemos sobre cómo podemos ayudar a dar vida a tu visión. Nuestro equipo de expertos está listo para asistirte con tu próximo proyecto.",
+    "cta": "Contáctanos"
+  }
+} 

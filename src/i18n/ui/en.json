@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "services": "Services",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Transforming Ideas into Digital Reality",
+    "description": "We are a full-service software development consultancy specializing in creating innovative solutions across all platforms. From static websites to complex applications, we bring your vision to life with cutting-edge technology and expert craftsmanship.",
+    "cta": "Get Started"
+  },
+  "services": {
+    "title": "Our Services",
+    "items": {
+      "customDev": {
+        "title": "Custom Software Development",
+        "description": "End-to-end development of web, mobile, and desktop applications tailored to your specific needs."
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "description": "Scalable cloud infrastructure and API development to power your digital transformation."
+      },
+      "staff": {
+        "title": "Staff Augmentation",
+        "description": "Enhance your team with our skilled developers and technical experts."
+      },
+      "training": {
+        "title": "Technical Training",
+        "description": "Comprehensive training programs to upskill your team in modern technologies."
+      },
+      "interviews": {
+        "title": "Technical Interviews",
+        "description": "Expert technical assessment and interviewing services to build your dream team."
+      },
+      "consulting": {
+        "title": "Consulting",
+        "description": "Strategic technology consulting to help you make informed decisions."
+      }
+    }
+  },
+  "expertise": {
+    "title": "Our Expertise",
+    "items": {
+      "web": {
+        "title": "Web Development",
+        "description": "Static sites to complex web applications"
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "iOS and Android native applications"
+      },
+      "desktop": {
+        "title": "Desktop Applications",
+        "description": "Cross-platform desktop solutions"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "description": "Scalable infrastructure and automation"
+      }
+    }
+  },
+  "contact": {
+    "title": "Ready to Start Your Project?",
+    "description": "Let's discuss how we can help bring your vision to life. Our team of experts is ready to assist you with your next project.",
+    "cta": "Contact Us"
+  }
+} 
