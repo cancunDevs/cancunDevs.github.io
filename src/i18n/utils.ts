@@ -1,5 +1,3 @@
-import type { UIDict } from './ui';
-
 export const languages = {
   es: 'Español',
   en: 'English',
