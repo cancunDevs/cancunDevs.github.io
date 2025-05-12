@@ -75,6 +75,11 @@ jobs:
           git checkout main
           git pull origin main
       
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist
       - name: Copy build files
         run: |
           rm -rf ./*
