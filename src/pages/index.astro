@@ -1,11 +1,44 @@
 ---
 import "../styles/global.css";
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-
+import ServiceCard from '../components/ServiceCard.astro';
+import type { Icon } from '../components/ServiceCard.astro';
 const lang = getLangFromUrl(Astro.url);
 const t = await useTranslations(lang);
----
 
+const services: Array<{ title: string; description: string; icon: Icon }> = [
+	{
+		title: t('services.items.customDev.title'),
+		description: t('services.items.customDev.description'),
+		icon: 'code',
+	},
+	{
+		title: t('services.items.cloud.title'),
+		description: t('services.items.cloud.description'),
+		icon: 'cloud',
+	},
+	{
+		title: t('services.items.staff.title'),
+		description: t('services.items.staff.description'),
+		icon: 'users',
+	},
+	{
+		title: t('services.items.training.title'),
+		description: t('services.items.training.description'),
+		icon: 'book',
+	},
+	{	
+		title: t('services.items.interviews.title'),
+		description: t('services.items.interviews.description'),
+		icon: 'briefcase',
+	},
+	{
+		title: t('services.items.consulting.title'),
+		description: t('services.items.consulting.description'),
+		icon: 'help-circle',
+	},
+];
+---
 <html lang={lang}>
 	<head>
 		<meta charset="utf-8" />
@@ -85,30 +118,9 @@ const t = await useTranslations(lang);
 				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<h2 class="text-4xl font-bold text-center mb-12 text-gray-900">{await t('services.title')}</h2>
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-							<h3 class="text-xl font-semibold text-blue-600 mb-4">{await t('services.items.customDev.title')}</h3>
-							<p class="text-gray-700">{await t('services.items.customDev.description')}</p>
-						</div>
-						<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-							<h3 class="text-xl font-semibold text-blue-600 mb-4">{await t('services.items.cloud.title')}</h3>
-							<p class="text-gray-700">{await t('services.items.cloud.description')}</p>
-						</div>
-						<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-							<h3 class="text-xl font-semibold text-blue-600 mb-4">{await t('services.items.staff.title')}</h3>
-							<p class="text-gray-700">{await t('services.items.staff.description')}</p>
-						</div>
-						<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-							<h3 class="text-xl font-semibold text-blue-600 mb-4">{await t('services.items.training.title')}</h3>
-							<p class="text-gray-700">{await t('services.items.training.description')}</p>
-						</div>
-						<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-							<h3 class="text-xl font-semibold text-blue-600 mb-4">{await t('services.items.interviews.title')}</h3>
-							<p class="text-gray-700">{await t('services.items.interviews.description')}</p>
-						</div>
-						<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-							<h3 class="text-xl font-semibold text-blue-600 mb-4">{await t('services.items.consulting.title')}</h3>
-							<p class="text-gray-700">{await t('services.items.consulting.description')}</p>
-						</div>
+						{services.map((service) => (
+							<ServiceCard title={service.title} description={service.description} icon={service.icon} />
+						))}
 					</div>
 				</div>
 			</section>
