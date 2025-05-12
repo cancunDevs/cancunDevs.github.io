@@ -78,7 +78,7 @@ jobs:
       - name: Copy build files
         run: |
           rm -rf ./*
-          cp -r ../build/dist/* ./
+          cp -r ./dist/* ./
       
       - name: Commit and push changes
         run: |
