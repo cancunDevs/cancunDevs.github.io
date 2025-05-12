@@ -79,11 +79,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: ./dist
+          path: artifact
       - name: Copy build files
         run: |
           rm -rf ./*
-          cp -r ./dist/* ./
+          cp -r artifact/* ./
       
       - name: Commit and push changes
         run: |
