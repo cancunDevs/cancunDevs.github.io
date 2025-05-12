@@ -2,7 +2,7 @@ name: Deploy Astro site to Pages
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: develop
+          ref: main
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -54,53 +54,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  # push-to-main:
-  #   needs: [build, deploy]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v4
-  #       with:
-  #         ref: develop
-  #         fetch-depth: 0
-      
-  #     - name: Configure Git
-  #       run: |
-  #         git config --global user.name 'GitHub Actions'
-  #         git config --global user.email 'github-actions@github.com'
-      
-  #     - name: Switch to main branch
-  #       run: |
-  #         git checkout main
-  #         git pull origin main
-      
-  #     - name: Download build artifact
-  #       uses: actions/download-artifact@v4
-  #       with:
-  #         name: github-pages
-  #         path: artifact
-
-  #     - name: print full path of artifact
-  #       run: |
-  #         echo "Full path of artifact: ${{ steps.download.outputs.path }}"
-
-  #     - name: navigate to artifact
-  #       run: |
-  #         cd artifact
-  #         ls -la
-
-  #     - name: navigate back to root
-  #       run: |
-  #         cd ..
-      
-  #     - name: Copy build files
-  #       run: |
-  #         rm -rf ./*
-  #         cp -r artifact/* ./
-      
-  #     - name: Commit and push changes
-  #       run: |
-  #         git add .
-  #         git commit -m "Update from develop branch [skip ci]"
-  #         git push origin main 
